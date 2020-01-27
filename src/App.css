@@ -1,38 +1,45 @@
+.drop-zone {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 400px;
+  height: 100px;
+  border: 1px dashed black;
+}
+
+.drop-zone__dragover {
+  background-color: #002fff3d;
+}
+
+.drop-zone__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.drop-zone__input {
+  flex: 1;
+}
+
+.drop-zone__progressbar {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+
+.container__relative {
+  position: relative;
+  z-index: 10;
+}
+
+.file-preview {
+  position: absolute;
+   width: 100px;
+   height: 100px;
+   right: 0;
+   bottom: 0;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
